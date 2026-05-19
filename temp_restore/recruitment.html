@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="assets/TrueKnack_favicon.png">
+<title>Recruitment Services | TrueKnack</title>
+<meta name="description" content="TrueKnack provides specialized Permanent Hiring and Recruitment Process Outsourcing services built to enable recruitment for tech and non-tech positions.">
+<link rel="canonical" href="https://www.trueknack.in/recruitment.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.trueknack.in/recruitment.html">
+<meta property="og:title" content="Recruitment Services | TrueKnack">
+<meta property="og:description" content="TrueKnack provides specialized Permanent Hiring and Recruitment Process Outsourcing services built to enable recruitment for tech and non-tech positions.">
+<meta property="og:image" content="https://www.trueknack.in/assets/TrueKnack-OG-image.png">
+<meta property="og:image:type" content="image/png">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#27336a">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<noscript><style>#preloader,#skeleton-loader{display:none!important}.fade-up-hero,.fade-up,.reveal-left,.reveal-right,.reveal-scale,.stagger-item{opacity:1!important;transform:none!important}</style></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script defer src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<style>
+html { scroll-behavior: auto; }
+body{background:#fff;color:#27336a;overflow-x:hidden;cursor:auto}
+h1,h2,h3,h4,h5,h6{text-wrap:balance}
+p,li,blockquote{text-wrap:pretty}
+html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+#cursor{display:none!important}
+@media(pointer:coarse){body{cursor:auto}#cursor{display:none!important}.hover-target{cursor:pointer}}
+.magnetic-wrap{display:inline-block;position:relative}
+::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#fff}::-webkit-scrollbar-thumb{background:#27336a;border-radius:4px}
+.nav-link{position:relative}.nav-link::after{content:'';position:absolute;width:100%;transform:scaleX(0);height:2px;bottom:0;left:0;background:currentColor;transform-origin:bottom right;transition:transform .3s ease}.nav-link:hover::after{transform:scaleX(1);transform-origin:bottom left}
+/* Cinematic Image Animations */
+@keyframes kenburns{0%{transform:scale(1) translate(0,0)}25%{transform:scale(1.08) translate(-1%,-1%)}50%{transform:scale(1.12) translate(1%,-0.5%)}75%{transform:scale(1.06) translate(-0.5%,1%)}100%{transform:scale(1) translate(0,0)}}
+.kenburns-img{animation:kenburns 20s ease-in-out infinite;will-change:transform}
+@keyframes img-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
+.breathe-img{animation:img-breathe 8s ease-in-out infinite}
+
+:focus-visible { outline: 3px solid #9b2a27; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+    .kenburns-img, .breathe-img, .animate-float, .animate-float-slow, .animate-float-reverse { animation: none !important; }
+}
+
+/* Heading hover effects */
+h1, h2, h3 {
+    color: #27336a;
+    transition: color 0.4s ease, background 0.4s ease, text-shadow 0.4s ease;
+    padding-bottom: 0.1em; /* Fix text clipping during background-clip hover */
+    margin-bottom: -0.1em;
+}
+h1:hover, h2:hover, h3:hover {
+    background: linear-gradient(90deg, #9b2a27 0%, #27336a 50%, #9b2a27 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 100%;
+    background-position: 100% 0%;
+}
+.bg-navy h1, .bg-navy h2, .bg-navy h3, .bg-navy h4,
+footer h1, footer h2, footer h3, footer h4,
+.text-white h1, .text-white h2, .text-white h3 {
+    color: white !important;
+    -webkit-text-stroke: 0 !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: white !important;
+    background-clip: unset !important;
+    transition: color 0.4s ease, text-shadow 0.4s ease;
+    text-shadow: none;
+}
+.bg-navy h1:hover, .bg-navy h2:hover, .bg-navy h3:hover,
+.text-white h1:hover, .text-white h2:hover, .text-white h3:hover,
+footer h1:hover, footer h2:hover, footer h3:hover {
+    color: white !important;
+    -webkit-text-fill-color: white !important;
+    -webkit-text-stroke: 0 !important;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+/* Ensure red text inside white headings stays red */
+.bg-navy h1 .text-red, .bg-navy h2 .text-red, .bg-navy h3 .text-red,
+.text-white h1 .text-red, .text-white h2 .text-red, .text-white h3 .text-red {
+    color: #9b2a27 !important;
+    -webkit-text-fill-color: #9b2a27 !important;
+    text-shadow: none !important;
+}
+footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
+.nav-link { transition: color 0.3s ease; }
+.nav-link:hover { color: #9b2a27; }
+
+/* Button hover animations */
+.cta-btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cta-btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+.cta-btn:hover::before {
+    left: 100%;
+}
+
+@media (max-width: 767px) {
+    #navbar #mobile-menu-btn {
+        margin-left: auto;
+    }
+}
+</style>
+</head>
+<body class="antialiased selection:bg-red selection:text-white relative">
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000000] focus:bg-white focus:text-navy focus:px-4 focus:py-3 focus:rounded-lg focus:shadow-lg">Skip to main content</a>
+
+<!-- Custom Cursor -->
+<div id="cursor" class="cursor-dot hidden md:flex">
+    <span id="cursor-text"></span>
+</div>
+
+<!-- SKELETON PRELOADER -->
+<div id="preloader" class="fixed inset-0 z-[999999] bg-white transition-opacity duration-500">
+    <div class="w-full px-6 md:px-12 py-6 flex justify-between items-center">
+        <div class="h-14 w-40 bg-gray-200 rounded-lg animate-pulse"></div>
+        <div class="hidden md:flex gap-6">
+            <div class="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+            <div class="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+            <div class="h-4 w-16 bg-gray-200 rounded animate-pulse"></div>
+            <div class="h-10 w-28 bg-gray-200 rounded-full animate-pulse"></div>
+        </div>
+    </div>
+    <div class="bg-gray-100 pt-16 pb-20 px-6">
+        <div class="max-w-7xl mx-auto space-y-5">
+            <div class="h-8 w-40 bg-gray-200 rounded-full animate-pulse"></div>
+            <div class="h-16 w-72 bg-gray-200 rounded-xl animate-pulse"></div>
+            <div class="h-5 w-96 bg-gray-200 rounded animate-pulse"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy" id="navbar" style="padding-left: 4px; padding-right: 48px;">
+    <div class="w-full max-w-none mx-0 flex justify-between items-center">
+        <a href="index.html" class="navbar-logo flex items-center gap-3 z-50 relative"><img src="TrueKnack logo-.png" alt="TrueKnack Logo" class="h-14 md:h-16 object-contain" width="629" height="191" decoding="async" loading="eager"></a>
+        <div class="hidden md:flex gap-5 lg:gap-8 text-sm lg:text-base font-medium items-center">
+            <a href="index.html" class="nav-link hover-target whitespace-nowrap">Home</a>
+            <a href="about.html" class="nav-link hover-target whitespace-nowrap">About Us</a>
+            <div class="relative group h-full flex items-center">
+                <a href="services.html" class="nav-link hover-target whitespace-nowrap text-red font-semibold relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-current after:origin-bottom-right after:transition-transform after:duration-300 group-hover:after:scale-x-100 group-hover:after:origin-bottom-left flex items-center gap-1" aria-current="page">
+                    Services
+                    <svg class="w-4 h-4 transition-transform duration-300 group-hover:-rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </a>
+                <div class="absolute top-full -left-4 mt-6 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left translate-y-2 group-hover:translate-y-0 z-[100] before:content-[''] before:absolute before:-top-6 before:left-0 before:w-full before:h-6">
+                    <div class="py-3 flex flex-col">
+                        <a href="recruitment.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Recruitment</a>
+                        <a href="staffing.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Staffing</a>
+                        <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Hire Train Deploy (HTD)</a>
+                        <a href="hr-consulting.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">HR Consulting</a>
+                    </div>
+                </div>
+            </div>
+            <a href="privacy-policy.html" class="nav-link hover-target whitespace-nowrap">Privacy Policy</a>
+            <div class="magnetic-wrap ml-4">
+                <a href="index.html#contact" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
+                    Contact Us&nbsp;</a>
+            </div>
+        </div>
+        <button class="md:hidden z-50 flex flex-col justify-center items-center w-8 h-8 space-y-1.5" id="mobile-menu-btn" aria-label="Toggle Menu" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="w-8 h-0.5 bg-current transition-all duration-300 block origin-center"></span>
+            <span class="w-8 h-0.5 bg-current transition-all duration-300 block origin-center"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 bg-navy z-40 flex flex-col justify-center items-center text-white opacity-0 pointer-events-none transition-opacity duration-500" aria-hidden="true">
+    <div class="flex flex-col gap-8 text-3xl font-semibold text-center">
+        <a href="index.html" class="mobile-link hover:text-red transition-colors">Home</a>
+        <a href="about.html" class="mobile-link hover:text-red transition-colors">About Us</a>
+        <a href="services.html" class="mobile-link text-red" aria-current="page">Services</a>
+        <div class="flex flex-col gap-4 text-lg font-normal text-white/70 -mt-4 mb-2">
+            <a href="recruitment.html" class="mobile-link hover:text-white transition-colors">Recruitment</a>
+            <a href="staffing.html" class="mobile-link hover:text-white transition-colors">Staffing</a>
+            <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors">Hire Train Deploy (HTD)</a>
+            <a href="hr-consulting.html" class="mobile-link hover:text-white transition-colors">HR Consulting</a>
+        </div>
+        <a href="privacy-policy.html" class="mobile-link hover:text-red transition-colors">Privacy Policy</a>
+        <a href="index.html#contact" class="mobile-link hover:text-red transition-colors">Contact Us</a>
+    </div>
+</div>
+
+<main id="main-content">
+    
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-44 md:pb-32 bg-offwhite overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <!-- Content -->
+            <div class="order-2 lg:order-1">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold !leading-snug text-navy tracking-tight mb-6 fade-up-hero">
+                    Recruitment engines built to source, skill, and sustain teams
+                </h1>
+                <p class="text-lg md:text-xl text-navy/70 font-light fade-up-hero mb-8 max-w-xl">
+                    TrueKnack provides specialized Permanent Hiring and Recruitment Process Outsourcing services built to enable recruitment for tech and non-tech positions—from large-scale volume hiring and lateral placements to executive leadership roles and diversity initiatives.
+                </p>
+                <div class="fade-up-hero">
+                    <a href="index.html#contact" class="cta-btn px-8 py-4 bg-navy text-white rounded-full font-medium inline-block hover:bg-red transition-colors duration-300">Schedule a consultation</a>
+                </div>
+            </div>
+            
+            <!-- Masonry Images -->
+            <div class="order-1 lg:order-2 relative w-full h-[400px] md:h-[600px] fade-up-hero">
+                <div class="absolute top-[5%] right-0 w-[60%] h-[40%] rounded-2xl overflow-hidden shadow-lg border border-gray-100 transition-transform duration-500 hover:scale-[1.02]">
+                    <img src="assets/gen_recruitment_hero_1.png" alt="Corporate Team" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-[25%] left-0 w-[50%] h-[35%] rounded-2xl overflow-hidden shadow-lg border border-gray-100 transition-transform duration-500 hover:scale-[1.02]">
+                    <img src="assets/gen_recruitment_hero_2.png" alt="HR Recruiter" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute bottom-[5%] right-[10%] w-[65%] h-[45%] rounded-2xl overflow-hidden shadow-lg border border-gray-100 z-10 transition-transform duration-500 hover:scale-[1.02]">
+                    <img src="assets/gen_recruitment_hero_3.png" alt="Business Leaders" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Abstract Background Curve -->
+        <div class="absolute bottom-0 right-0 w-full h-64 pointer-events-none">
+            <svg viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full object-cover object-bottom" preserveAspectRatio="none">
+                <path fill="#ffffff" fill-opacity="1" d="M0,288L80,272C160,256,320,224,480,208C640,192,800,192,960,208C1120,224,1280,256,1360,272L1440,288L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="py-20 md:py-28 px-6 bg-navy text-white relative overflow-hidden">
+        <!-- Subtle dark background gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-navy/30 to-transparent pointer-events-none"></div>
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-[0.03]">
+            <div class="absolute top-20 right-40 w-[300px] h-[300px] border border-white rotate-12"></div>
+            <div class="absolute bottom-10 left-20 w-[200px] h-[200px] border border-white -rotate-12"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-5">
+                <h2 class="text-3xl md:text-5xl font-bold !leading-snug tracking-tight reveal-left">
+                    Recruitment strategies designed to find your perfect fit.
+                </h2>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6 stagger-grid">
+                <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-red/50 transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-3xl md:text-5xl font-bold text-white mb-2"><span class="stat-number" data-target="50" data-suffix="+">0+</span></div>
+                    <p class="text-white/60 text-sm md:text-base font-medium">Expert recruiters</p>
+                </div>
+                <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-red/50 transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-3xl md:text-5xl font-bold text-white mb-2"><span class="stat-number" data-target="100" data-suffix="%">0%</span></div>
+                    <p class="text-white/60 text-sm md:text-base font-medium">Commitment to finding the perfect match</p>
+                </div>
+                <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-red/50 transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-3xl md:text-5xl font-bold text-white mb-2">24/7</div>
+                    <p class="text-white/60 text-sm md:text-base font-medium">Support available for your hiring needs</p>
+                </div>
+                <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-red/50 transition-all duration-300 backdrop-blur-sm group">
+                    <div class="text-3xl md:text-5xl font-bold text-white mb-2"><span class="stat-number" data-target="50" data-suffix="+">0+</span></div>
+                    <p class="text-white/60 text-sm md:text-base font-medium">Industry partners</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Permanent Volume Hiring -->
+    <section class="py-20 md:py-28 px-6 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Image & Stats -->
+            <div class="relative reveal-left order-2 lg:order-1">
+                <div class="rounded-2xl overflow-hidden aspect-[4/5] md:aspect-square shadow-xl border border-gray-100 relative">
+                    <img src="assets/gen_recruitment_perm_hiring.png" alt="Permanent Hiring" class="w-full h-full object-cover">
+                    <!-- Overlay gradient for depth -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent"></div>
+                </div>
+                <div class="absolute -bottom-8 md:-bottom-10 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] bg-white rounded-xl shadow-xl border border-gray-100 p-4 md:p-6 flex justify-between text-center divide-x divide-gray-100 z-10">
+                    <div class="px-2 md:px-4 w-1/3">
+                        <div class="text-xl md:text-2xl font-bold text-navy"><span class="stat-number" data-target="500" data-suffix="+">0+</span></div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Volume hiring capabilities</div>
+                    </div>
+                    <div class="px-2 md:px-4 w-1/3">
+                        <div class="text-xl md:text-2xl font-bold text-navy">10-20%</div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Annual CTC success-fee model</div>
+                    </div>
+                    <div class="px-2 md:px-4 w-1/3">
+                        <div class="text-xl md:text-2xl font-bold text-navy">24hrs</div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Shortlist TAT</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Content -->
+            <div class="reveal-right order-1 lg:order-2">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-red/10 text-red font-semibold text-sm mb-6 border border-red/20 shadow-sm">Permanent Hiring</div>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
+                    Scale teams with precision and purpose with our Permanent Volume Hiring solutions
+                </h3>
+                <p class="text-navy/70 mb-8 leading-relaxed text-base md:text-lg">
+                    Our Permanent Volume Hiring model is designed for organizations seeking to grow rapidly, inclusively, and sustainably. We streamline every step—from sourcing high volumes of candidates to ensuring diverse and capable talent shortlists—while maintaining transparent pricing and fast turnaround times. With us, you scale your teams confidently, only paying for successful placements that drive lasting business value.
+                </p>
+                <h4 class="text-xl font-bold text-navy mb-5">What sets us apart:</h4>
+                <ul class="space-y-4 text-navy/70 font-medium">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Scaled recruitment at speed</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Full-spectrum sourcing — freshers, lateral shifts, career switchers and more</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span>Transparent and modular pricing, with volume discounts for large-scale hires</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Hiring -->
+    <section class="py-20 md:py-28 px-6 bg-offwhite relative overflow-hidden mt-12 md:mt-0">
+        <div class="max-w-7xl mx-auto text-center mb-16 fade-up">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-[#4a90e2] text-white font-semibold text-sm mb-6 shadow-md">Leadership Hiring</div>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug max-w-4xl mx-auto">
+                Leadership Hiring that prioritizes discretion, accuracy, and cultural fitment.
+            </h3>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <div class="reveal-left rounded-2xl overflow-hidden shadow-xl border border-gray-100">
+                <img src="assets/gen_recruitment_leadership.png" alt="Leadership Hiring" class="w-full aspect-[4/3] object-cover">
+            </div>
+            <div class="reveal-right space-y-4">
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100" open>
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none text-lg md:text-xl text-navy p-6 hover:bg-gray-50 transition-colors select-none">
+                        Global executive network and market intelligence
+                        <span class="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-navy/70 p-6 pt-0 border-t border-gray-100 mt-2">
+                        <p class="mt-4 leading-relaxed">Direct access to leaders working at Fortune 500 companies globally, combined with role-specific competitive insights to source and position opportunities compellingly.</p>
+                    </div>
+                </details>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none text-lg md:text-xl text-navy p-6 hover:bg-gray-50 transition-colors select-none">
+                        Discreet, high-impact search methodology
+                        <span class="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-navy/70 p-6 pt-0 border-t border-gray-100 mt-2">
+                        <p class="mt-4 leading-relaxed">Confidential and targeted outreach to passive candidates, ensuring your strategic moves remain private until you're ready to announce them.</p>
+                    </div>
+                </details>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100">
+                    <summary class="flex justify-between items-center font-semibold cursor-pointer list-none text-lg md:text-xl text-navy p-6 hover:bg-gray-50 transition-colors select-none">
+                        HR procedure execution
+                        <span class="transition-transform duration-300 group-open:rotate-180 ml-4 flex-shrink-0">
+                            <svg class="w-6 h-6 text-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </span>
+                    </summary>
+                    <div class="text-navy/70 p-6 pt-0 border-t border-gray-100 mt-2">
+                        <p class="mt-4 leading-relaxed">End-to-end support throughout the executive hiring process, from interview coordination to complex compensation negotiations and onboarding.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recruitment Process Outsourcing (RPO) -->
+    <section class="py-20 md:py-28 px-6 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center mb-16 fade-up">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-[#4a90e2] text-white font-semibold text-sm mb-6 shadow-md">Recruitment Process Outsourcing</div>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug max-w-5xl mx-auto">
+                End to end Recruitment Process Outsourcing for flexible staffing solutions, from speed hiring to strategic workforce design
+            </h3>
+        </div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-grid">
+            <!-- Card 1 -->
+            <div class="stagger-item bg-graylight rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="p-8 flex-grow">
+                    <svg class="w-10 h-10 text-navy mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    <h4 class="text-xl font-bold text-navy mb-4">Enterprise RPO</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">
+                        Complete recruitment ownership with dedicated embedded teams handling sourcing, screening, interviews, offers, onboarding, and strategic reporting via KPI dashboards — ideal for comprehensive outsourcing.
+                    </p>
+                </div>
+                <div class="h-48 w-full px-4 pb-4">
+                    <img src="assets/gen_recruitment_rpo_1.png" alt="Enterprise RPO" class="w-full h-full object-cover rounded-xl shadow-sm">
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="stagger-item bg-graylight rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 lg:mt-6">
+                <div class="p-8 flex-grow">
+                    <svg class="w-10 h-10 text-navy mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <h4 class="text-xl font-bold text-navy mb-4">Activity-based RPO</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">
+                        Targeted support for specific recruitment activities like sourcing, screening, and shortlisting, excluding offers; fixed fees per task for hybrid in-house/outsourced models with real-time funnel visibility.
+                    </p>
+                </div>
+                <div class="h-48 w-full px-4 pb-4">
+                    <img src="assets/indian_hr_team.png" alt="Activity-based RPO" class="w-full h-full object-cover rounded-xl shadow-sm">
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="stagger-item bg-graylight rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div class="p-8 flex-grow">
+                    <svg class="w-10 h-10 text-navy mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    <h4 class="text-xl font-bold text-navy mb-4">Recruiter on-demand</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">
+                        Flexible, scalable access to specialized recruiters (including onsite options) for surge staffing, agile hiring peaks, or skill gaps, billed monthly per recruiter.
+                    </p>
+                </div>
+                <div class="h-48 w-full px-4 pb-4">
+                    <img src="assets/indian_business_leader.png" alt="Recruiter on-demand" class="w-full h-full object-cover rounded-xl shadow-sm">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diversity, Equity, and Inclusion -->
+    <section class="py-20 md:py-28 px-6 bg-navy text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-red/20 to-transparent pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto text-center mb-16 fade-up relative z-10">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-white/10 text-white font-semibold text-sm mb-6 shadow-md backdrop-blur-sm">Our Commitment</div>
+            <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight !leading-snug max-w-4xl mx-auto">
+                Diversity, Equity, and Inclusion
+            </h3>
+            <p class="mt-6 text-white/70 max-w-2xl mx-auto text-lg">
+                We believe that diverse teams drive innovation. Our hiring strategies are purposefully designed to build inclusive workforces.
+            </p>
+        </div>
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 stagger-grid relative z-10">
+            <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                <svg class="w-12 h-12 text-red mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <h4 class="text-xl font-bold mb-2">Gender Diversity</h4>
+                <p class="text-white/60 text-sm">Empowering women in leadership and technical roles to create balanced, high-performing teams.</p>
+            </div>
+            <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                <svg class="w-12 h-12 text-red mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                <h4 class="text-xl font-bold mb-2">Veterans</h4>
+                <p class="text-white/60 text-sm">Transitioning military excellence, discipline, and leadership skills into the corporate sector.</p>
+            </div>
+            <div class="stagger-item bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm hover:bg-white/10 transition-all text-center">
+                <svg class="w-12 h-12 text-red mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                <h4 class="text-xl font-bold mb-2">People with Disabilities</h4>
+                <p class="text-white/60 text-sm">Fostering accessible workplaces and unlocking the potential of differently-abled talent.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantage Section -->
+    <section id="advantage" class="py-24 px-6 bg-offwhite">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/5 text-red font-semibold text-sm mb-4 fade-up">
+                    <div class="w-1.5 h-1.5 rounded-full bg-red"></div>Why Choose Us
+                </div>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-navy reveal-scale">The TrueKnack Advantage</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-grid">
+                <!-- Row 1 -->
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Integrated talent ecosystem</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Access to a vast talent community, enhanced through end-to-end hiring solutions.</p>
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Industry-specialist recruiters</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">50+ expert recruiters across multiple sectors including BFSI, tech, manufacturing and more.</p>
+                </div>
+                <div class="stagger-item relative rounded-3xl overflow-hidden shadow-sm h-full min-h-[250px]">
+                    <img src="assets/focused_professional.png" alt="Focused Professional" class="absolute inset-0 w-full h-full object-cover" width="600" height="400" loading="lazy" decoding="async">
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Outcome-driven delivery</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Structured models focused on meeting hiring goals with speed and consistency.</p>
+                </div>
+                <!-- Row 2 -->
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Professional Excellence</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Our 50+ person team undergoes continuous training to stay ahead of industry trends, delivering exceptional results.</p>
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Quick Turnaround</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Speed matters. We deliver qualified candidates faster without compromising on quality.</p>
+                </div>
+                <div class="stagger-item relative rounded-3xl overflow-hidden shadow-sm h-full min-h-[250px] md:col-span-2">
+                    <img src="assets/team_celebrating.png" alt="Team Celebrating" class="absolute inset-0 w-full h-full object-cover" width="800" height="400" loading="lazy" decoding="async">
+                </div>
+                <!-- Row 3 -->
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Full Transparency</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Clear communication and regular updates throughout the entire recruitment process.</p>
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Replacement Guarantee</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Your satisfaction is our priority. We will find you the right candidate at no additional cost if needed.</p>
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Immediate Joiners</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Validated profiles delivered within 24 hours, supported by a ready tech talent bench.</p>
+                </div>
+                <div class="stagger-item bg-white rounded-3xl p-8 flex flex-col justify-start shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="mb-6 text-navy">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-navy mb-3">Full-cycle staffing expertise</h4>
+                    <p class="text-navy/70 text-sm leading-relaxed">Payroll management, compliance operations, and an active contingent workforce.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy text-white pt-20 pb-10 px-6 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 relative z-10">
+        <div class="md:col-span-2">
+            <a href="index.html" class="block mb-6 hover-target max-w-[240px] md:max-w-[320px]">
+                <img src="TrueKnack logo-.png" alt="TrueKnack Logo" class="w-full h-auto object-contain brightness-0 invert" width="629" height="191" decoding="async" loading="eager">
+            </a>
+            <p class="text-white/60 max-w-sm mb-8">
+                The Knack of Finding True Talent.<br class="hidden xl:block"> 
+                Your strategic partner connecting exceptional talent<br class="hidden xl:block"> 
+                with outstanding opportunities.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://www.linkedin.com/company/trueknack" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-red hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg></a>
+                <a href="https://wa.me/919930255613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg></a>
+            </div>
+        </div>
+        <div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="index.html#contact" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
+        <div><h4 class="font-bold mb-6 text-lg">Contact</h4><ul class="space-y-4 text-white/60"><li><a href="tel:9930255613" class="hover:text-red transition-colors">99302 55613</a></li><li><a href="mailto:hr@trueknack.in" class="hover:text-red transition-colors">hr@trueknack.in</a></li></ul></div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40 z-10 relative">
+        <p>&copy; <span id="year">2026</span> TrueKnack Skill Services LLP. All rights reserved.</p>
+        <p class="mt-2 md:mt-0">Designed for Transformation.</p>
+    </div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 text-[12vw] leading-none font-bold whitespace-nowrap pointer-events-none z-0" style="color: rgba(255,255,255,0.05);">TRUEKNACK</div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+
+    const revealWithoutAnimation = () => {
+        document.querySelectorAll('#preloader, #skeleton-loader').forEach(loader => { loader.style.display = 'none'; });
+        document.querySelectorAll('.fade-up-hero, .fade-up, .reveal-left, .reveal-right, .reveal-scale, .stagger-item').forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+        });
+    };
+
+    if (!window.gsap || !window.ScrollTrigger || !window.Lenis) {
+        revealWithoutAnimation();
+        return;
+    }
+
+    gsap.config({ nullTargetWarn: false });
+    gsap.registerPlugin(ScrollTrigger);
+
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true,
+        smoothTouch: false
+    });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => { lenis.raf(time * 1000); });
+    gsap.ticker.lagSmoothing(0);
+
+    const navbar = document.getElementById('navbar');
+    const checkNavScroll = () => {
+        if (!navbar) return;
+        if (window.scrollY > 50) {
+            navbar.classList.add('py-1', 'shadow-md');
+            navbar.classList.remove('py-2');
+        } else {
+            navbar.classList.remove('py-1', 'shadow-md');
+            navbar.classList.add('py-2');
+        }
+    };
+    window.addEventListener('scroll', checkNavScroll, { passive: true });
+    checkNavScroll();
+
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    let menuOpen = false;
+    const setMenuState = (open) => {
+        if (!btn || !menu) return;
+        menuOpen = open;
+        btn.setAttribute('aria-expanded', String(menuOpen));
+        menu.setAttribute('aria-hidden', String(!menuOpen));
+        const spans = btn.querySelectorAll('span');
+        if (menuOpen) {
+            menu.classList.remove('opacity-0', 'pointer-events-none');
+            if (spans[0]) gsap.to(spans[0], { y: 4, rotate: 45, duration: 0.3 });
+            if (spans[1]) gsap.to(spans[1], { y: -4, rotate: -45, duration: 0.3 });
+            lenis.stop();
+        } else {
+            menu.classList.add('opacity-0', 'pointer-events-none');
+            if (spans[0]) gsap.to(spans[0], { y: 0, rotate: 0, duration: 0.3 });
+            if (spans[1]) gsap.to(spans[1], { y: 0, rotate: 0, duration: 0.3 });
+            lenis.start();
+        }
+    };
+    if (btn && menu) {
+        setMenuState(false);
+        btn.addEventListener('click', () => setMenuState(!menuOpen));
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => { if (menuOpen) setMenuState(false); });
+        });
+    }
+
+    const cursor = document.getElementById('cursor');
+    if (cursor && window.matchMedia('(pointer: fine)').matches) {
+        gsap.set(cursor, { xPercent: -50, yPercent: -50 });
+        let mX = 0, mY = 0, cX = 0, cY = 0;
+        window.addEventListener('mousemove', e => { mX = e.clientX; mY = e.clientY; }, { passive: true });
+        gsap.ticker.add(() => {
+            cX += (mX - cX) * 0.15;
+            cY += (mY - cY) * 0.15;
+            gsap.set(cursor, { x: cX, y: cY });
+        });
+        document.querySelectorAll('a, button, .hover-target').forEach(el => {
+            el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+            el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+        });
+    }
+
+    document.querySelectorAll('.magnetic-wrap').forEach(wrap => {
+        const item = wrap.querySelector('.magnetic-item');
+        if (!item) return;
+        wrap.addEventListener('mousemove', e => {
+            const rect = wrap.getBoundingClientRect();
+            gsap.to(item, {
+                x: (e.clientX - rect.left - rect.width / 2) * 0.3,
+                y: (e.clientY - rect.top - rect.height / 2) * 0.3,
+                duration: 0.4,
+                ease: 'power2.out'
+            });
+        });
+        wrap.addEventListener('mouseleave', () => {
+            gsap.to(item, { x: 0, y: 0, duration: 0.6, ease: 'elastic.out(1,0.3)' });
+        });
+    });
+
+    function animateItems(selector, from, to) {
+        gsap.utils.toArray(selector).forEach(el => {
+            gsap.set(el, from);
+            ScrollTrigger.create({
+                trigger: el, start: 'top 90%', once: true,
+                onEnter: () => gsap.to(el, { ...to, overwrite: true })
+            });
+        });
+    }
+
+    animateItems('.fade-up', { y: 60, opacity: 0 }, { y: 0, opacity: 1, duration: 1.4, ease: 'power4.out' });
+    animateItems('.reveal-left', { x: -80, opacity: 0 }, { x: 0, opacity: 1, duration: 1.4, ease: 'power4.out' });
+    animateItems('.reveal-right', { x: 80, opacity: 0 }, { x: 0, opacity: 1, duration: 1.4, ease: 'power4.out' });
+    animateItems('.reveal-scale', { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.4, ease: 'power3.out' });
+
+    gsap.utils.toArray('.stagger-grid').forEach(grid => {
+        const items = grid.querySelectorAll('.stagger-item');
+        if (!items.length) return;
+        gsap.set(items, { y: 60, opacity: 0 });
+        ScrollTrigger.create({
+            trigger: grid,
+            start: 'top 85%',
+            once: true,
+            onEnter: () => gsap.to(items, { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: 'power4.out', overwrite: true })
+        });
+    });
+
+    gsap.utils.toArray('.parallax-img').forEach(img => {
+        gsap.to(img, {
+            yPercent: -15,
+            ease: 'none',
+            scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true }
+        });
+    });
+
+    // Stat Number Animation
+    document.querySelectorAll('.stat-number').forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const suffix = counter.getAttribute('data-suffix') || '';
+        ScrollTrigger.create({
+            trigger: counter,
+            start: "top 85%",
+            once: true,
+            onEnter: () => {
+                const obj = { val: 0 };
+                counter.innerText = "0" + suffix;
+                gsap.to(obj, {
+                    val: target,
+                    duration: 2,
+                    ease: "power2.out",
+                    onUpdate: () => { counter.innerText = Math.round(obj.val) + suffix; }
+                });
+            }
+        });
+    });
+
+    gsap.set('.fade-up-hero', { y: 40, opacity: 0 });
+    const hideLoader = () => {
+        const loader = document.getElementById('preloader');
+        if (!loader || loader.dataset.hidden) return;
+        loader.dataset.hidden = 'true';
+        gsap.to(loader, {
+            opacity: 0,
+            duration: 0.6,
+            onComplete: () => {
+                loader.style.display = 'none';
+                gsap.to('.fade-up-hero', { y: 0, opacity: 1, duration: 1.4, stagger: 0.15, ease: 'power4.out' });
+            }
+        });
+    };
+    window.addEventListener('load', hideLoader);
+    setTimeout(hideLoader, 2500);
+});
+</script>
+</body>
+</html>
