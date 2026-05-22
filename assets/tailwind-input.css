@@ -16,4 +16,16 @@
             font-size: clamp(13px, 0.55vw + 0.45rem, 16px);
         }
     }
+
+    /* 
+     * GLOBAL GSAP CLIPPING FIX 
+     * Overrides the restrictive clipping of tailwind's overflow-hidden on main structural containers.
+     * Changes 'hidden' to 'clip' and expands the clip margin to allow GSAP animations (like stagger-grid drop-shadows and reveal-up effects) to render up to 150px outside their container bounds without causing horizontal scrollbars.
+     */
+    section.overflow-hidden, 
+    header.overflow-hidden,
+    footer.overflow-hidden {
+        overflow: clip !important;
+        overflow-clip-margin: 150px;
+    }
 }
