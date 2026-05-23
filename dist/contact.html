@@ -31,7 +31,8 @@
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     
     <noscript><style>#preloader,#skeleton-loader{display:none!important}.fade-up-hero,.fade-up,.reveal-left,.reveal-right,.reveal-scale,.stagger-item{opacity:1!important;transform:none!important}
-    </style></noscript>
+    section.overflow-hidden{-webkit-mask-image:-webkit-radial-gradient(white, black);}
+</style></noscript>
     <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.trueknack.in/#organization","name":"TrueKnack Skill Services LLP","alternateName":"TrueKnack","url":"https://www.trueknack.in/","logo":"https://www.trueknack.in/assets/TrueKnack_favicon.png","email":"hr@trueknack.in","telephone":"+91-9930255613","sameAs":["https://www.linkedin.com/company/trueknack"]},{"@type":"WebSite","@id":"https://www.trueknack.in/#website","url":"https://www.trueknack.in/","name":"TrueKnack","publisher":{"@id":"https://www.trueknack.in/#organization"},"inLanguage":"en-IN"},{"@type":"WebPage","@id":"https://www.trueknack.in/contact.html#webpage","url":"https://www.trueknack.in/contact.html","name":"Contact Us | TrueKnack - The Knack of Finding True Talent","description":"Get in touch with TrueKnack for recruitment, staffing, and HR consulting.","isPartOf":{"@id":"https://www.trueknack.in/#website"},"breadcrumb":{"@id":"https://www.trueknack.in/contact.html#breadcrumb"},"inLanguage":"en-IN"},{"@type":"BreadcrumbList","@id":"https://www.trueknack.in/about.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.trueknack.in/"},{"@type":"ListItem","position":2,"name":"Contact Us","item":"https://www.trueknack.in/contact.html"}]}]}</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +42,7 @@
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
-        html { scroll-behavior: auto; }
+        html { scroll-behavior: auto; overflow-x: hidden; }
         body { background-color: #fff; color: #27336a; overflow-x: hidden; cursor: auto; }
         h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
         
@@ -122,7 +123,7 @@
 
         /* === CINEMATIC IMAGE ANIMATIONS === */
         @keyframes kenburns { 0% { transform: scale(1) translate(0,0); } 25% { transform: scale(1.08) translate(-1%,-1%); } 50% { transform: scale(1.12) translate(1%,-0.5%); } 75% { transform: scale(1.06) translate(-0.5%,1%); } 100% { transform: scale(1) translate(0,0); } }
-        .kenburns-img { animation: kenburns 20s ease-in-out infinite; will-change: transform; contain: layout style; }
+        .kenburns-img{animation:kenburns 20s ease-in-out infinite;will-change:transform}
         
         @keyframes img-breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.03); } }
         .breathe-img { animation: img-breathe 8s ease-in-out infinite; }
