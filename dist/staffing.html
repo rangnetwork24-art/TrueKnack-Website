@@ -124,6 +124,15 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
     }
 }
 </style>
+
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="antialiased selection:bg-red selection:text-white relative">
 <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000000] focus:bg-white focus:text-navy focus:px-4 focus:py-3 focus:rounded-lg focus:shadow-lg">Skip to main content</a>
@@ -154,8 +163,8 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
 </div>
 
 <!-- Navigation -->
-<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy" id="navbar" style="padding-left: 4px; padding-right: 48px;">
-    <div class="w-full max-w-none mx-0 flex justify-between items-center">
+<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy px-4 sm:px-6 lg:px-8" id="navbar">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
         <a href="index.html" class="navbar-logo flex items-center gap-3 z-50 relative"><img src="TrueKnack logo-.png" alt="TrueKnack Logo" class="h-14 md:h-16 object-contain" width="629" height="191" decoding="async" loading="eager"></a>
         <div class="hidden md:flex gap-5 lg:gap-8 text-sm lg:text-base font-medium items-center">
             <a href="index.html" class="nav-link hover-target whitespace-nowrap">Home</a>
@@ -168,15 +177,15 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <div class="absolute top-full -left-4 mt-6 w-64 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left translate-y-2 group-hover:translate-y-0 z-[100] before:content-[''] before:absolute before:-top-6 before:left-0 before:w-full before:h-6">
                     <div class="py-3 flex flex-col">
                         <a href="recruitment.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Recruitment</a>
-                        <a href="staffing.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Staffing</a>
-                        <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Hire Train Deploy (HTD)</a>
+                        <a href="staffing.html" class="px-5 py-3 text-sm text-red bg-red/5 translate-x-1 transition-all font-semibold block pointer-events-none" aria-current="page">Staffing</a>
+                        <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
                         <a href="hr-consulting.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">HR Consulting</a>
                     </div>
                 </div>
             </div>
             <a href="privacy-policy.html" class="nav-link hover-target whitespace-nowrap">Privacy Policy</a>
             <div class="magnetic-wrap ml-4">
-                <a href="index.html#contact" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
+                <a href="contact.html" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
                     Contact Us&nbsp;</a>
             </div>
         </div>
@@ -195,12 +204,12 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         <a href="services.html" class="mobile-link text-red" aria-current="page">Services</a>
         <div class="flex flex-col gap-4 text-lg font-normal text-white/70 -mt-4 mb-2">
             <a href="recruitment.html" class="mobile-link hover:text-white transition-colors">Recruitment</a>
-            <a href="staffing.html" class="mobile-link text-red" aria-current="page">Staffing</a>
-            <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors">Hire Train Deploy (HTD)</a>
+            <a href="staffing.html" class="mobile-link text-red font-semibold pointer-events-none" aria-current="page">Staffing</a>
+            <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
             <a href="hr-consulting.html" class="mobile-link hover:text-white transition-colors">HR Consulting</a>
         </div>
         <a href="privacy-policy.html" class="mobile-link hover:text-red transition-colors">Privacy Policy</a>
-        <a href="index.html#contact" class="mobile-link hover:text-red transition-colors">Contact Us</a>
+        <a href="contact.html" class="mobile-link hover:text-red transition-colors">Contact Us</a>
     </div>
 </div>
 
@@ -211,12 +220,14 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center relative z-10">
             <!-- Content -->
             <div class="order-2 lg:order-1">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold !leading-snug text-navy tracking-tight mb-6 fade-up-hero">Flexible staffing solutions to scale your business</h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight !leading-snug text-navy mb-6 fade-up-hero">
+                    Flexible Staffing Solutions to Scale Your Business
+                </h1>
                 <p class="text-lg md:text-xl text-navy/70 font-light fade-up-hero mb-8 max-w-xl">
                     TrueKnack delivers customized staffing services designed to meet complex hiring needs with speed and accuracy. Leveraging an extensive network, we provide scalable staffing across tech and non-tech roles, including volume hiring, lateral moves, senior leadership, and diversity-focused recruitment.
                 </p>
                 <div class="fade-up-hero">
-                    <a href="index.html#contact" class="cta-btn px-8 py-4 bg-navy text-white rounded-full font-medium inline-block hover:bg-red transition-colors duration-300">Schedule a consultation</a>
+                    <a href="contact.html" class="cta-btn px-8 py-4 bg-navy text-white rounded-full font-medium inline-block hover:bg-red transition-colors duration-300">Schedule a consultation</a>
                 </div>
             </div>
             
@@ -243,7 +254,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
     </header>
 
     <!-- Stats Section -->
-    <section class="py-14 md:py-20 px-6 bg-navy text-white relative overflow-hidden">
+    <section class="py-14 md:py-20 px-6 bg-navy text-white relative">
         <!-- Subtle dark background gradient -->
         <div class="absolute inset-0 bg-gradient-to-br from-navy/30 to-transparent pointer-events-none"></div>
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-[0.03]">
@@ -253,8 +264,8 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
             <div class="lg:col-span-5">
-                <h2 class="text-3xl md:text-5xl font-bold !leading-snug tracking-tight reveal-left">
-                    Flexible staffing solutions designed for scale and agility.
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight !leading-snug reveal-left">
+                    Flexible Staffing Solutions Designed for Scale and Agility
                 </h2>
             </div>
             <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6 stagger-grid">
@@ -279,7 +290,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
     </section>
 
         <!-- IT Staffing -->
-    <section class="py-14 md:py-20 px-6 bg-white relative overflow-hidden">
+    <section class="pt-14 md:pt-20 pb-24 md:pb-28 px-6 bg-white relative">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <!-- Left Image & Stats -->
             <div class="relative reveal-left order-2 lg:order-1">
@@ -290,26 +301,26 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <div class="absolute -bottom-8 md:-bottom-10 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%] bg-white rounded-xl shadow-xl border border-gray-100 p-4 md:p-6 flex justify-between text-center divide-x divide-gray-100 z-10">
                     <div class="px-2 md:px-4 w-1/3">
                         <div class="text-lg md:text-xl font-bold text-navy"><span class="stat-number" data-target="15" data-suffix=" Days">0</span></div>
-                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Deployment Time</div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 !leading-snug">Deployment Time</div>
                     </div>
                     <div class="px-2 md:px-4 w-1/3">
                         <div class="text-lg md:text-xl font-bold text-navy"><span class="stat-number" data-target="100" data-suffix="%">0%</span></div>
-                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Pre-vetted Talent</div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 !leading-snug">Pre-vetted Talent</div>
                     </div>
                     <div class="px-2 md:px-4 w-1/3">
                         <div class="text-lg md:text-xl font-bold text-navy">24hrs</div>
-                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 leading-tight">Shortlist TAT</div>
+                        <div class="text-[10px] md:text-xs text-navy/60 mt-1 !leading-snug">Shortlist Turnaround</div>
                     </div>
                 </div>
             </div>
             <!-- Right Content -->
             <div class="reveal-right order-1 lg:order-2">
                 <div class="inline-block px-4 py-1.5 rounded-full bg-red/10 text-red font-semibold text-sm mb-6 border border-red/20 shadow-sm">IT Staffing</div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
                     Agile Tech Teams, Ready on Demand
                 </h3>
                 <p class="text-navy/70 mb-8 leading-relaxed text-base md:text-lg">
-                    Build specialized technology teams with agility. We provide end-to-end IT staffing solutions, from setting up Micro Capability Centers to full Build-Operate-Transfer (BOT) models. Access our bench of pre-vetted tech professionals to accelerate your digital transformation and meet critical project timelines.
+                    Build specialized technology teams with agility. We provide end-to-end IT staffing solutions, from setting up Micro Capability Centers to full <span class="whitespace-nowrap">Build-Operate-Transfer (BOT)</span> models. Access our bench of pre-vetted tech professionals to accelerate your digital transformation and meet critical project timelines.
                 </p>
                 <h4 class="text-xl font-bold text-navy mb-5">Key Models:</h4>
                 <ul class="space-y-4 text-navy/70 font-medium">
@@ -323,7 +334,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                     </li>
                     <li class="flex items-start gap-3">
                         <svg class="w-6 h-6 text-navy flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        <span><strong>Build Operate Transfer (BOT):</strong> We build and operate the capability, transferring it when you're ready.</span>
+                        <span><strong><span class="whitespace-nowrap">Build-Operate-Transfer (BOT)</span>:</strong> We build and operate the capability, transferring it when you're ready.</span>
                     </li>
                 </ul>
             </div>
@@ -331,13 +342,13 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
     </section>
 
     <!-- General Staffing -->
-    <section class="py-14 md:py-20 px-6 bg-offwhite relative overflow-hidden mt-12 md:mt-0">
+    <section class="py-14 md:py-20 px-6 bg-offwhite relative overflow-hidden">
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <!-- Left Content -->
             <div class="reveal-left">
                 <div class="inline-block px-4 py-1.5 rounded-full bg-red/10 text-red font-semibold text-sm mb-6 border border-red/20 shadow-sm">General Staffing</div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
-                    Unlock scaled growth for non-tech teams
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
+                    Unlock Scaled Growth for Non-Tech Teams
                 </h3>
                 <p class="text-navy/70 mb-8 leading-relaxed text-base md:text-lg">
                     General Staffing solutions that adapt to your evolving business needs. We source and deploy skilled professionals across finance, HR, legal, sales, marketing, and administrative roles efficiently, ensuring high-quality hires aligned with your organizational culture.
@@ -387,26 +398,26 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/10 text-red border border-red/20 font-semibold text-sm mb-4 fade-up backdrop-blur-sm">
                     Why Choose Us
                 </div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight text-navy reveal-scale">The TrueKnack Advantage</h3>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-navy reveal-scale !leading-snug">The TrueKnack Advantage</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-grid">
                 <!-- Card 1 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Access to our extensive talent pool</h4>
+                    <h4 class="text-xl font-bold mb-3">Access to Our Extensive Talent Pool</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Trained professionals from our network, across a variety of industries and roles.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Immediate joiners</h4>
+                    <h4 class="text-xl font-bold mb-3">Immediate Joiners</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Agile hiring models designed to deliver candidates within 15 days of request, complete with pre-vetted talent on standby.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Data-driven sourcing</h4>
+                    <h4 class="text-xl font-bold mb-3">Data-Driven Sourcing</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Our data-supported sourcing ensures precise search and shortlisting - mapped directly to performance and delivery KPIs.</p>
                 </div>
                 
@@ -418,7 +429,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <!-- Card 4 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Compliance readiness</h4>
+                    <h4 class="text-xl font-bold mb-3">Compliance Readiness</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Robust statutory governance backed by centralized legal and compliance oversight.</p>
                 </div>
             </div>
@@ -444,7 +455,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <a href="https://wa.me/919930255613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg></a>
             </div>
         </div>
-        <div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="index.html#contact" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
+        <div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="contact.html" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
         <div><h4 class="font-bold mb-6 text-lg">Contact</h4><ul class="space-y-4 text-white/60"><li><a href="tel:9930255613" class="hover:text-red transition-colors">99302 55613</a></li><li><a href="mailto:hr@trueknack.in" class="hover:text-red transition-colors">hr@trueknack.in</a></li></ul></div>
     </div>
     <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40 z-10 relative">
@@ -635,5 +646,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideLoader, 2500);
 });
 </script>
+<script src="assets/chatbot.js" defer></script>
 </body>
 </html>
+
+

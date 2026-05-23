@@ -4,6 +4,14 @@
 
 @layer base {
     /*
+     * MOBILE OVERFLOW FIX
+     * Prevents any element from causing horizontal scrolling on mobile.
+     */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /*
      * Fluid root font-size scaling for desktop viewports.
      * - Below 1024px: default 16px (untouched, mobile/tablet stays native)
      * - At 1024px:    ~13px (compact laptop feel)
@@ -19,13 +27,22 @@
 
     /* 
      * GLOBAL GSAP CLIPPING FIX 
-     * Overrides the restrictive clipping of tailwind's overflow-hidden on main structural containers.
-     * Changes 'hidden' to 'clip' and expands the clip margin to allow GSAP animations (like stagger-grid drop-shadows and reveal-up effects) to render up to 150px outside their container bounds without causing horizontal scrollbars.
+     * On mobile: use standard overflow-hidden to prevent horizontal scroll.
+     * On desktop: expand clip margin to allow GSAP animations to render outside bounds.
      */
-    section.overflow-hidden, 
-    header.overflow-hidden,
-    footer.overflow-hidden {
-        overflow: clip !important;
-        overflow-clip-margin: 150px;
+    @media (max-width: 767px) {
+        section.overflow-hidden, 
+        header.overflow-hidden,
+        footer.overflow-hidden {
+            overflow: hidden !important;
+        }
+    }
+    @media (min-width: 768px) {
+        section.overflow-hidden, 
+        header.overflow-hidden,
+        footer.overflow-hidden {
+            overflow: clip !important;
+            overflow-clip-margin: 150px;
+        }
     }
 }

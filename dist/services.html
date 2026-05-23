@@ -136,6 +136,15 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
             }
         }
 </style>
+
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="antialiased selection:bg-red selection:text-white relative">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000000] focus:bg-white focus:text-navy focus:px-4 focus:py-3 focus:rounded-lg focus:shadow-lg">Skip to&nbsp;main content</a>
@@ -166,8 +175,8 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </div>
 
 <!-- Navigation -->
-<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy" id="navbar" style="padding-left: 4px; padding-right: 48px;">
-<div class="w-full max-w-none mx-0 flex justify-between items-center">
+<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy px-4 sm:px-6 lg:px-8" id="navbar">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
 <a href="index.html" class="navbar-logo flex items-center gap-3 z-50 relative"><img src="TrueKnack logo-.png" alt="TrueKnack Logo" class="h-14 md:h-16 object-contain" width="629" height="191" decoding="async" loading="eager"></a>
 <div class="hidden md:flex gap-5 lg:gap-8 text-sm lg:text-base font-medium items-center">
 <a href="index.html" class="nav-link hover-target whitespace-nowrap">Home</a>
@@ -181,14 +190,14 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
         <div class="py-3 flex flex-col">
             <a href="recruitment.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Recruitment</a>
             <a href="staffing.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Staffing</a>
-            <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Hire Train Deploy (HTD)</a>
+            <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
             <a href="hr-consulting.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">HR Consulting</a>
         </div>
     </div>
 </div>
 <a href="privacy-policy.html" class="nav-link hover-target whitespace-nowrap">Privacy Policy</a>
 <div class="magnetic-wrap ml-4">
-    <a href="index.html#contact" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
+    <a href="contact.html" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
         Contact Us&nbsp;</a>
 </div>
 </div>
@@ -208,11 +217,11 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 <div class="flex flex-col gap-4 text-lg font-normal text-white/70 -mt-4 mb-2">
     <a href="recruitment.html" class="mobile-link hover:text-white transition-colors">Recruitment</a>
     <a href="staffing.html" class="mobile-link hover:text-white transition-colors">Staffing</a>
-    <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors">Hire Train Deploy (HTD)</a>
+    <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
     <a href="hr-consulting.html" class="mobile-link hover:text-white transition-colors">HR Consulting</a>
 </div>
 <a href="privacy-policy.html" class="mobile-link hover:text-red transition-colors">Privacy Policy</a>
-<a href="index.html#contact" class="mobile-link hover:text-red transition-colors">Contact Us</a>
+<a href="contact.html" class="mobile-link hover:text-red transition-colors">Contact Us</a>
 </div>
 </div>
 
@@ -231,8 +240,8 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </div>
 <div class="max-w-7xl mx-auto px-6 relative z-10 text-white">
 <div class="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm font-semibold tracking-wide mb-6 fade-up-hero"><span class="inline-block w-2 h-2 bg-red rounded-full mr-2"></span>Our&nbsp;Solutions</div>
-<h1 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl lg:text-6xl font-bold !leading-snug tracking-tight mb-6 fade-up-hero">Our Services</h1>
-<p class="text-lg md:text-xl text-white/80 max-w-2xl font-light fade-up-hero">
+<h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight !leading-snug mb-6 fade-up-hero">Our Services</h1>
+<p class="text-lg md:text-xl text-white/80 max-w-3xl font-light fade-up-hero">
     Customized, outcome-driven recruitment solutions that transform hiring<br class="hidden xl:block"> 
     into a&nbsp;strategic growth driver for&nbsp;your business.
 </p>
@@ -243,7 +252,7 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 <div class="max-w-7xl mx-auto">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/5 text-red font-semibold text-sm mb-4 fade-up"><div class="w-1.5 h-1.5 rounded-full bg-red"></div>How It Works</div>
-<h3 class="text-3xl md:text-5xl font-bold tracking-tight reveal-scale">Our Recruitment Process</h3>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight reveal-scale !leading-snug">Our Recruitment Process</h3>
 <p class="mt-4 text-navy/70 max-w-2xl mx-auto fade-up">A&nbsp;streamlined, transparent process designed to&nbsp;get you the&nbsp;right talent — fast.</p>
 </div>
 <div class="relative stagger-grid">
@@ -286,13 +295,15 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </section>
 
 <!-- Core Services -->
-<section class="py-20 md:py-28 px-6 bg-white relative overflow-hidden">
-<div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/3 w-[31.25rem] h-[31.25rem] bg-gradient-to-br from-red/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
-<div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/3 w-[25rem] h-[25rem] bg-gradient-to-tr from-navy/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+<section class="py-20 md:py-28 px-6 bg-white relative">
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/3 w-[31.25rem] h-[31.25rem] bg-gradient-to-br from-red/5 to-transparent rounded-full blur-3xl"></div>
+<div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/3 w-[25rem] h-[25rem] bg-gradient-to-tr from-navy/5 to-transparent rounded-full blur-3xl"></div>
+</div>
 <div class="max-w-7xl mx-auto relative z-10">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/5 text-red font-semibold text-sm mb-4 fade-up"><div class="w-1.5 h-1.5 rounded-full bg-red"></div>What We&nbsp;Offer</div>
-<h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale">Solutions Designed to Meet Your Workforce Goals.</h3>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale !leading-snug">Solutions Designed to Meet Your Workforce Goals</h3>
 <p class="text-navy/70 max-w-2xl mx-auto fade-up">A&nbsp;talent engine built to&nbsp;source, skill, and&nbsp;sustain workforces at&nbsp;scale.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-grid">
@@ -367,9 +378,9 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </div>
 </section>
 <!-- Industries -->
-<section class="py-14 md:py-20 px-6 bg-navy text-white relative overflow-hidden">
+<section class="py-14 md:py-20 px-6 bg-navy text-white relative">
 <!-- Animated background elements -->
-<div class="absolute inset-0 opacity-[0.04]">
+<div class="absolute inset-0 opacity-[0.04] overflow-hidden pointer-events-none">
 <div class="absolute top-20 left-10 w-[18.75rem] h-[18.75rem] border border-white rounded-full"></div>
 <div class="absolute bottom-10 right-20 w-[31.25rem] h-[31.25rem] border border-white rounded-full"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[43.75rem] h-[43.75rem] border border-white rotate-45"></div>
@@ -377,7 +388,7 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 <div class="max-w-7xl mx-auto relative z-10">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 text-red font-semibold text-sm mb-4 fade-up border border-white/10"><div class="w-1.5 h-1.5 rounded-full bg-red"></div>Industries We&nbsp;Serve</div>
-<h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale">Specialized Hiring Across High-Impact Industries</h3>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale !leading-snug">Specialized Hiring Across High-Impact Industries</h3>
 <p class="text-white/70 max-w-2xl mx-auto fade-up">
     We&nbsp;work closely with&nbsp;you to&nbsp;understand your unique needs, culture,<br class="hidden xl:block"> 
     and&nbsp;hiring goals to&nbsp;tailor a&nbsp;recruitment strategy<br class="hidden xl:block"> 
@@ -455,12 +466,14 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </section>
 
 <!-- Why Choose Us -->
-<section class="py-20 md:py-28 px-6 bg-white relative overflow-hidden">
-<div class="absolute -top-20 -right-20 w-[25rem] h-[25rem] bg-gradient-to-bl from-red/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+<section class="py-20 md:py-28 px-6 bg-white relative">
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+<div class="absolute -top-20 -right-20 w-[25rem] h-[25rem] bg-gradient-to-bl from-red/5 to-transparent rounded-full blur-3xl"></div>
+</div>
 <div class="max-w-7xl mx-auto relative z-10">
 <div class="text-center mb-12">
 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/5 text-red font-semibold text-sm mb-4 fade-up"><div class="w-1.5 h-1.5 rounded-full bg-red"></div>The&nbsp;TrueKnack Edge</div>
-<h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale">Why Leading Companies Choose Us</h3>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4 reveal-scale !leading-snug">Why Leading Companies Choose Us</h3>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-grid">
 <div class="stagger-item hover-target cursor-pointer bg-graylight rounded-2xl p-6 hover:-translate-y-2 hover:shadow-xl transition-all duration-500 border border-transparent hover:border-red/20">
@@ -489,7 +502,7 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 <div class="absolute inset-0 bg-navy/60"></div>
 <div class="relative z-10 flex items-center justify-center h-full text-center px-6">
 <div class="fade-up">
-<h3 class="text-3xl md:text-5xl font-bold text-white mb-4">Your Growth, Our Mission.</h3>
+<h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">Your Growth, Our Mission.</h3>
 <p class="text-white/70 text-lg max-w-xl mx-auto">
     We&nbsp;don't just fill positions —<br class="hidden xl:block"> 
     We&nbsp;build the&nbsp;teams that build your future.
@@ -499,17 +512,17 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 </section>
 
 <!-- CTA -->
-<section class="relative py-16 md:py-20 overflow-hidden">
+<section class="relative py-16 md:py-20">
 <div class="absolute inset-0 bg-navy"></div>
-<div class="absolute inset-0 opacity-10">
+<div class="absolute inset-0 opacity-10 overflow-hidden pointer-events-none">
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50rem] h-[50rem] border border-white/20 rounded-full"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[31.25rem] h-[31.25rem] border border-white/15 rounded-full"></div>
 </div>
 <div class="max-w-4xl mx-auto text-center px-6 relative z-10 text-white">
-<h2 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold mb-4 reveal-scale">Ready to Move Your Business Forward?</h2>
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 reveal-scale text-balance">Ready to Move Your Business Forward?</h2>
 <p class="text-white/70 text-lg mb-10 fade-up">Whether you're seeking clarity, growth, or transformation, We're here to&nbsp;help.</p>
 <div class="flex flex-wrap justify-center gap-4 fade-up">
-<a href="index.html#contact" class="cta-btn px-8 py-4 bg-white text-navy rounded-full font-medium hover:bg-graylight transition-colors duration-300 shadow-lg">Talk to&nbsp;an&nbsp;Advisor</a>
+<a href="contact.html" class="cta-btn px-8 py-4 bg-white text-navy rounded-full font-medium hover:bg-graylight transition-colors duration-300 shadow-lg">Talk to&nbsp;an&nbsp;Advisor</a>
 <a href="about.html" class="cta-btn px-8 py-4 bg-white/10 text-white border border-white/30 rounded-full font-medium hover:bg-white/20 transition-colors duration-300">Learn About Us</a>
 </div>
 </div>
@@ -533,7 +546,7 @@ html.lenis{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis
 <a href="https://wa.me/919930255613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg></a>
 </div>
 </div>
-<div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="index.html#contact" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
+<div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="contact.html" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
 <div><h4 class="font-bold mb-6 text-lg">Contact</h4><ul class="space-y-4 text-white/60"><li><a href="tel:9930255613" class="hover:text-red transition-colors">99302 55613</a></li><li><a href="mailto:hr@trueknack.in" class="hover:text-red transition-colors">hr@trueknack.in</a></li></ul></div>
 </div>
 <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40 z-10 relative">
@@ -723,5 +736,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideLoader, 2500);
 });
 </script>
+<script src="assets/chatbot.js" defer></script>
 </body>
 </html>
+
+

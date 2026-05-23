@@ -124,6 +124,15 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
     }
 }
 </style>
+
+    <!-- Google Analytics (Placeholder) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
 </head>
 <body class="antialiased selection:bg-red selection:text-white relative">
 <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000000] focus:bg-white focus:text-navy focus:px-4 focus:py-3 focus:rounded-lg focus:shadow-lg">Skip to main content</a>
@@ -154,8 +163,8 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
 </div>
 
 <!-- Navigation -->
-<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy" id="navbar" style="padding-left: 4px; padding-right: 48px;">
-    <div class="w-full max-w-none mx-0 flex justify-between items-center">
+<nav class="fixed w-full z-50 transition-all duration-300 py-2 bg-white shadow-sm text-navy px-4 sm:px-6 lg:px-8" id="navbar">
+        <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
         <a href="index.html" class="navbar-logo flex items-center gap-3 z-50 relative"><img src="TrueKnack logo-.png" alt="TrueKnack Logo" class="h-14 md:h-16 object-contain" width="629" height="191" decoding="async" loading="eager"></a>
         <div class="hidden md:flex gap-5 lg:gap-8 text-sm lg:text-base font-medium items-center">
             <a href="index.html" class="nav-link hover-target whitespace-nowrap">Home</a>
@@ -169,14 +178,14 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                     <div class="py-3 flex flex-col">
                         <a href="recruitment.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Recruitment</a>
                         <a href="staffing.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Staffing</a>
-                        <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">Hire Train Deploy (HTD)</a>
-                        <a href="hr-consulting.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block">HR Consulting</a>
+                        <a href="hire-train-deploy.html" class="px-5 py-3 text-sm text-navy hover:bg-red/5 hover:text-red hover:translate-x-1 transition-all font-medium block"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
+                        <a href="hr-consulting.html" class="px-5 py-3 text-sm text-red bg-red/5 translate-x-1 transition-all font-semibold block pointer-events-none" aria-current="page">HR Consulting</a>
                     </div>
                 </div>
             </div>
             <a href="privacy-policy.html" class="nav-link hover-target whitespace-nowrap">Privacy Policy</a>
             <div class="magnetic-wrap ml-4">
-                <a href="index.html#contact" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
+                <a href="contact.html" class="hover-target magnetic-item whitespace-nowrap px-5 lg:px-6 py-3 bg-navy text-white rounded-full hover:bg-red transition-colors duration-300 inline-block">
                     Contact Us&nbsp;</a>
             </div>
         </div>
@@ -196,11 +205,11 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         <div class="flex flex-col gap-4 text-lg font-normal text-white/70 -mt-4 mb-2">
             <a href="recruitment.html" class="mobile-link hover:text-white transition-colors">Recruitment</a>
             <a href="staffing.html" class="mobile-link hover:text-white transition-colors">Staffing</a>
-            <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors">Hire Train Deploy (HTD)</a>
-            <a href="hr-consulting.html" class="mobile-link text-red" aria-current="page">HR Consulting</a>
+            <a href="hire-train-deploy.html" class="mobile-link hover:text-white transition-colors"><span class="whitespace-nowrap">Hire-Train-Deploy (HTD)</span></a>
+            <a href="hr-consulting.html" class="mobile-link text-red font-semibold pointer-events-none" aria-current="page">HR Consulting</a>
         </div>
         <a href="privacy-policy.html" class="mobile-link hover:text-red transition-colors">Privacy Policy</a>
-        <a href="index.html#contact" class="mobile-link hover:text-red transition-colors">Contact Us</a>
+        <a href="contact.html" class="mobile-link hover:text-red transition-colors">Contact Us</a>
     </div>
 </div>
 
@@ -211,12 +220,12 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center relative z-10">
             <!-- Content -->
             <div class="order-2 lg:order-1">
-                <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold !leading-snug text-navy tracking-tight mb-6 fade-up-hero">Strategic HR Consulting & Advisory</h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight !leading-snug text-navy mb-6 fade-up-hero">Strategic HR Consulting & Advisory</h1>
                 <p class="text-lg md:text-xl text-navy/70 font-light fade-up-hero mb-8 max-w-xl">
                     TrueKnack provides strategic HR consulting encompassing a breadth of services including compliance guidance, outplacement management, and talent insighting to help businesses navigate regulatory complexities, optimize talent strategies, and achieve cost efficiencies.
                 </p>
                 <div class="fade-up-hero">
-                    <a href="index.html#contact" class="cta-btn px-8 py-4 bg-navy text-white rounded-full font-medium inline-block hover:bg-red transition-colors duration-300">Schedule a consultation</a>
+                    <a href="contact.html" class="cta-btn px-8 py-4 bg-navy text-white rounded-full font-medium inline-block hover:bg-red transition-colors duration-300">Schedule a consultation</a>
                 </div>
             </div>
             
@@ -253,8 +262,8 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
         
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
             <div class="lg:col-span-5">
-                <h2 class="text-3xl md:text-5xl font-bold !leading-snug tracking-tight reveal-left">
-                    Strategic HR guidance to drive compliance and growth.
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight !leading-snug text-white mb-6 reveal-left">
+                    Strategic HR Guidance to Drive Compliance and Growth
                 </h2>
             </div>
             <div class="lg:col-span-7 grid grid-cols-2 gap-4 md:gap-6 stagger-grid">
@@ -291,7 +300,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
             <!-- Right Content -->
             <div class="reveal-right order-1 lg:order-2">
                 <div class="inline-block px-4 py-1.5 rounded-full bg-red/10 text-red font-semibold text-sm mb-6 border border-red/20 shadow-sm">Expert Advisory</div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
                     Comprehensive Compliance & Outplacement
                 </h3>
                 <p class="text-navy/70 mb-8 leading-relaxed text-base md:text-lg">
@@ -317,7 +326,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
             <!-- Left Content -->
             <div class="reveal-left">
                 <div class="inline-block px-4 py-1.5 rounded-full bg-red/10 text-red font-semibold text-sm mb-6 border border-red/20 shadow-sm">Market Intelligence</div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy tracking-tight !leading-snug mb-6">
                     Actionable Talent Mapping
                 </h3>
                 <p class="text-navy/70 mb-8 leading-relaxed text-base md:text-lg">
@@ -361,26 +370,26 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-red/10 text-red border border-red/20 font-semibold text-sm mb-4 fade-up backdrop-blur-sm">
                     Why Choose Us
                 </div>
-                <h3 class="text-2xl md:text-3xl lg:text-4xl lg:text-5xl font-bold tracking-tight text-navy reveal-scale">Objective expert guidance</h3>
+                <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-navy reveal-scale !leading-snug">Objective Expert Guidance</h3>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-grid">
                 <!-- Card 1 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">360° compliance mastery</h4>
+                    <h4 class="text-xl font-bold mb-3">360° Compliance Mastery</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Labor law adherence and vendor/payroll compliance enabling partners to navigate regulations confidently.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Advanced talent mapping</h4>
+                    <h4 class="text-xl font-bold mb-3">Advanced Talent Mapping</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Actionable analytics and market insights for precise talent identification and workforce planning.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Proven cost reduction</h4>
+                    <h4 class="text-xl font-bold mb-3">Proven Cost Reduction</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Significant payroll savings and absolute statutory adherence via unified systems and audit-ready governance.</p>
                 </div>
                 
@@ -392,7 +401,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <!-- Card 4 -->
                 <div class="stagger-item bg-white border border-gray-100 rounded-3xl p-8 hover:shadow-lg transition-all">
                     <svg class="w-10 h-10 text-red mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    <h4 class="text-xl font-bold mb-3">Objective guidance</h4>
+                    <h4 class="text-xl font-bold mb-3">Objective Guidance</h4>
                     <p class="text-navy/70 text-sm leading-relaxed">Unbiased advice from our experienced team, empowering compliance and talent retention.</p>
                 </div>
             </div>
@@ -418,7 +427,7 @@ footer h4:hover { color: #9b2a27 !important; transition: all 0.3s ease; }
                 <a href="https://wa.me/919930255613" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-green-500 hover:-translate-y-1 transition-all duration-300"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg></a>
             </div>
         </div>
-        <div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="index.html#contact" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
+        <div><h4 class="font-bold mb-6 text-lg">Pages</h4><ul class="space-y-4 text-white/60"><li><a href="index.html" class="hover:text-red transition-colors inline-block">Home</a></li><li><a href="about.html" class="hover:text-red transition-colors inline-block">About Us</a></li><li><a href="services.html" class="hover:text-red transition-colors inline-block" aria-current="page">Services</a></li><li><a href="contact.html" class="hover:text-red transition-colors inline-block">Contact</a></li></ul></div>
         <div><h4 class="font-bold mb-6 text-lg">Contact</h4><ul class="space-y-4 text-white/60"><li><a href="tel:9930255613" class="hover:text-red transition-colors">99302 55613</a></li><li><a href="mailto:hr@trueknack.in" class="hover:text-red transition-colors">hr@trueknack.in</a></li></ul></div>
     </div>
     <div class="max-w-7xl mx-auto border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-white/40 z-10 relative">
@@ -609,5 +618,8 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(hideLoader, 2500);
 });
 </script>
+<script src="assets/chatbot.js" defer></script>
 </body>
 </html>
+
+

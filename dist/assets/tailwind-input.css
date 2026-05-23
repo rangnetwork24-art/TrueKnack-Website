@@ -4,6 +4,14 @@
 
 @layer base {
     /*
+     * MOBILE OVERFLOW FIX
+     * Prevents any element from causing horizontal scrolling on mobile.
+     */
+    html, body {
+        overflow-x: hidden;
+    }
+
+    /*
      * Fluid root font-size scaling for desktop viewports.
      * - Below 1024px: default 16px (untouched, mobile/tablet stays native)
      * - At 1024px:    ~13px (compact laptop feel)
@@ -14,6 +22,27 @@
     @media (min-width: 1024px) {
         html {
             font-size: clamp(13px, 0.55vw + 0.45rem, 16px);
+        }
+    }
+
+    /* 
+     * GLOBAL GSAP CLIPPING FIX 
+     * On mobile: use standard overflow-hidden to prevent horizontal scroll.
+     * On desktop: expand clip margin to allow GSAP animations to render outside bounds.
+     */
+    @media (max-width: 767px) {
+        section.overflow-hidden, 
+        header.overflow-hidden,
+        footer.overflow-hidden {
+            overflow: hidden !important;
+        }
+    }
+    @media (min-width: 768px) {
+        section.overflow-hidden, 
+        header.overflow-hidden,
+        footer.overflow-hidden {
+            overflow: clip !important;
+            overflow-clip-margin: 150px;
         }
     }
 }
