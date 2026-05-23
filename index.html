@@ -58,7 +58,8 @@
                 opacity: 1 !important;
                 transform: none !important
             }
-        section.overflow-hidden{-webkit-mask-image:-webkit-radial-gradient(white, black);}
+        section.overflow-hidden{transform:translateZ(0);clip-path:inset(0);}
+    section.overflow-hidden > div.absolute.inset-0:not(.kenburns-img){transform:translateZ(0);}
 </style>
     </noscript>
     <script
